@@ -1,0 +1,265 @@
+/*
+Theme Name: Roofing Contractor
+Template: construction-hub
+Text Domain: roofing-contractor
+Author: ThemesPride
+Author URI: https://www.themespride.com/
+Theme URI: https://www.themespride.com/themes/free-roofing-wordpress-theme/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Roofing Contractor is a professional theme created for remodelling and renovation services, repair works, exterior and interior works, tiling companies, maintenance and painting services, roofing, construction, and all the relevant services. It is created using the latest version of the Bootstrap framework. With stunning animations, the design has Call to Action Button (CTA) making it more interactive. If you are searching for an amazing theme, then this will be the one. It has a clean design using the minima style and is created with a responsive design to view on all devices easily. The Call to Action Button (CTA) makes it interactive, and stunning animations are added to the design to make it more appealing. It also brings translation-ready supporting multiple languages for content available on your website. A theme of pure elegance, Roofing Services is one of the best themes for any kind of service industry. This theme includes everything from a clean design to an interactive CTA button, from a responsive layout to translation support, making it the perfect choice!
+Tags: wide-blocks, block-styles, one-column, two-columns, right-sidebar, left-sidebar, three-columns, four-columns, grid-layout, custom-colors, custom-header, custom-background, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, e-commerce, education, photography
+Version: 1.0
+Tested up to: 5.9
+Requires PHP: 5.6
+*/
+
+body,h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+
+a,.page-box h4 a,.readmore-btn a,.box-content a, #theme-sidebar .textwidget a, #footer .textwidget a, .comment-body a, .entry-content a, .entry-summary a,.social-media i:hover,#theme-sidebar h3,#theme-sidebar a:hover,#footer h3,#theme-sidebar button[type="submit"]:hover, #comments input[type="submit"]:hover, span.meta-nav:hover{
+  color: #fda12b;
+}
+.readmore-btn a:hover,#theme-sidebar button[type="submit"], #footer button[type="submit"],.prev.page-numbers, .next.page-numbers,.page-numbers,#theme-sidebar .tagcloud a:hover,.site-info,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#comments input[type="submit"],.main-navigation ul ul a:hover,span.meta-nav,.more-btn a,#our_project i,.search-box i{
+  background: #fda12b;
+}
+.readmore-btn a,#footer .tagcloud a:hover,.search_inner form.search-form{
+  border-color: #fda12b;
+}
+
+h1, h2, h3, h4, h5, h6,.box-info i,.logo h1 a,.logo p,.main-navigation a:hover,.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a{
+  color: #182333;
+}
+#slider .carousel-control-prev-icon:hover, #slider .carousel-control-next-icon:hover,.more-btn a:hover,.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce span.onsale,#footer,.main-navigation ul ul,#theme-sidebar button[type="submit"]:hover, #comments input[type="submit"]:hover, span.meta-nav:hover,span.page-numbers.current,.page-numbers:hover,.prev.page-numbers:focus, .prev.page-numbers:hover, .next.page-numbers:focus, .next.page-numbers:hover,#slider,.search-box i:hover{
+  background: #182333;
+}
+
+#main-content a{
+  text-decoration: underline;
+}
+.logo{
+  position: static;
+  margin: 0;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+}
+.headerbox i,.headerbox p{
+  padding: 0;
+  font-size: 15px;
+}
+.social-media a,.headerbox p, .headerbox i,.search-box i:hover {
+  color: #fff;
+}
+.headerimg{
+  display: none;
+}
+.search_inner{
+  max-width: 100%;
+}
+.menubar{
+  background: transparent;
+}
+.headerbox {
+  background: linear-gradient(90deg, #fda12b 35%, #182333 35%);
+}
+.main-navigation a {
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  color: #182333;
+  letter-spacing: 0;
+}
+#mySidenav{
+  justify-content: flex-end;
+}
+.headerbox p span {
+  font-weight: 600;
+}
+
+/* SLIDER CSS */
+
+#slider .carousel-caption {
+  top: 50%;
+  right: 50%;
+  left: 15%;
+  text-align: left;
+}
+#slider .inner_carousel{
+  text-align: left;
+}
+#slider img {
+  opacity: 0.5;
+}
+#slider .inner_carousel h2 {
+  font-size: 45px;
+}
+
+/* PROJECTS CSS */
+
+.title-head {
+  border-left: solid 5px #fda12b;
+  padding-left: 15px;
+}
+.title-head h6 {
+  color: #8d9296;
+}
+.title-head h3 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+#projetcs-sec button.tablinks {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#projetcs-sec .tab button:hover, button.tablinks.active {
+  background: #fda12b !important;
+  color: #fff;
+}
+#projetcs-sec .box{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+#projetcs-sec .box:hover{ box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+#projetcs-sec .box:before{
+  content: "";
+  background: rgb(24 35 51);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+#projetcs-sec .box:hover:before{ bottom: 0; }
+#projetcs-sec .box img{
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease 0s;
+}
+#projetcs-sec .box:hover img{ opacity: 0.3; }
+#projetcs-sec .box .box-content{
+  color: #fff;
+  background: #182333;
+  width: 100%;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+  border-bottom: 5px solid #fda12b;
+}  
+#projetcs-sec .box:hover .box-content{
+  background: #fda12b;
+}
+#projetcs-sec .box .title {
+  font-size: 14px;
+}
+#projetcs-sec .box .title a {
+  color: #fff;
+  text-decoration: none;
+}
+#projetcs-sec .box-content p{
+  display: none;
+}
+#projetcs-sec .box:hover p{
+  display: block;
+  color: #fff;
+}
+
+/* OTHER CSS */
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+@media screen and (max-width: 1000px){
+  .contact-section,#slider .inner_carousel,.logo {
+    text-align: center;
+  }
+  .headerbox {
+    margin: 0;
+    background: #182333;
+    padding: 0;
+  }
+  .toggle-nav i {
+    font-size: 15px;
+    color: #fff;
+  }
+  .toggle-nav{
+    text-align: left;
+  }
+  .toggle-nav button {
+    background: #fda12b;
+  }
+  .sidenav{
+    background: #182333;
+  }
+  #slider .carousel-caption {
+    right: 15%;
+  }
+  .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a{
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .title-head{
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+}
