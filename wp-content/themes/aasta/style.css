@@ -4,7 +4,7 @@ Theme URI: https://themearile.com/aasta-theme/
 Author: ThemeArile
 Author URI: https://themearile.com
 Description: Aasta is a modern and powerful multipurpose business WordPress theme with a high-quality look that helps to make a beautiful website for each firm, company, and industry. Aasta is a lightweight, super-fast theme to accelerate your efforts. It comes packed with powerful features for designing and customizing theme pages, advanced typography, sticky menu, header styles, logo upload, translation ready (WPML, Polylang), built with SEO in mind and it's built to be beautiful on all screen sizes. The theme is perfectly suited for business, consultant, finance, corporate, freelancer, agency, business promotion, personal portfolio, electrician, industries, education, SEO, construction, fashion, online shop, health & medical, Beauty & spa salons, wedding, photography, gym, cafe, music, interior design firms, architecture firms, lawyer, restaurant, hotel, blog, magazine, travel agency and many other websites compatible. This theme supports the best Elementor page builder to create, edit, and update page designs as per the requirement. Aasta also supports popular free and premium WordPress plugins such as Elementor, Yoast SEO, WooCommerce, Contact Form 7, Jetpack, Google Analytics, and much more. Check the demo of Aasta Pro https://themearile.com/aasta-pro-theme/
-Version: 2.4
+Version: 2.5
 Tested up to: 6.0
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -2731,7 +2731,9 @@ ul.wp-block-archives-list {
 	color: #e5e5e5;
 	margin-bottom: 0;
 }
-
+.sidebar .widget .wp-block-group .wp-block-quote {
+	margin-bottom: 0;
+}
 
 /*------------------------------------------------------------
 =>> Footer Sidebar Widget Style Css According to WordPress 6.0

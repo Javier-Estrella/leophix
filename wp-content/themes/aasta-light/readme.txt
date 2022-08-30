@@ -4,7 +4,7 @@ Author: ThemeArile
 Requires at least: 4.7
 Tested up to: 6.0
 Requires PHP: 5.6
-Version: 2.1
+Version: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
@@ -66,6 +66,9 @@ License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/1649307
 
 == Changelog ==
+
+= Version 2.2
+* We fixed the bottom space of the wp-block-quote widget for the sidebar area.
 
 = Version 2.1
 * We fixed the bottom space of the wp-block-verse widget for the sidebar area.
