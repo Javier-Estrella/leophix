@@ -1,10 +1,10 @@
 === Construction Hub ===
 Contributors: ThemesPride
-Tags: wide-blocks, block-styles, one-column, two-columns, right-sidebar, left-sidebar, three-columns, four-columns, grid-layout, custom-colors, custom-header, custom-background, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, post-formats, threaded-comments, translation-ready, blog, e-commerce, photography
+Tags: wide-blocks, block-styles, one-column, two-columns, right-sidebar, left-sidebar, three-columns, four-columns, grid-layout, custom-colors, custom-header, custom-background, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, post-formats, threaded-comments, translation-ready, flexible-header, blog, e-commerce, photography
 Requires at least: 5.0
 Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 0.8.7
+Stable tag: 0.8.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -192,6 +192,10 @@ Construction hub is an exemplary theme related to the construction businesses an
 
 = 0.8.7 =
     . Remove preloader section.
+
+= 0.8.8 =
+    . Added flexible-header.
+	. Updated rtl-support.
 
 == Resources ==
 

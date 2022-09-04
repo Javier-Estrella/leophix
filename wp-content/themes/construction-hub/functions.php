@@ -6,7 +6,7 @@
  * @subpackage construction_hub
  */
 function construction_hub_setup() {
-	
+
 	load_theme_textdomain( 'construction-hub', get_template_directory() . '/language' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'woocommerce' );
@@ -31,6 +31,7 @@ function construction_hub_setup() {
 		'width'       => 250,
 		'height'      => 250,
 		'flex-width'  => true,
+		'flex-height' => true,
 	) );
 
 	// Add theme support for selective refresh for widgets.
@@ -182,7 +183,7 @@ function construction_hub_scripts() {
 	wp_enqueue_script( 'construction-hub-custom-scripts', esc_url( get_template_directory_uri() ) . '/assets/js/construction-hub-custom.js', array('jquery'), true);
 
 	wp_enqueue_script( 'construction-hub-focus-nav', esc_url( get_template_directory_uri() ) . '/assets/js/focus-nav.js', array('jquery'), true);
-	
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -198,8 +199,8 @@ add_action( 'admin_enqueue_scripts', 'construction_hub_admin_enqueue_scripts' );
 
 /*radio button sanitization*/
 function construction_hub_sanitize_choices( $input, $setting ) {
-    global $wp_customize; 
-    $control = $wp_customize->get_control( $setting->id ); 
+    global $wp_customize;
+    $control = $wp_customize->get_control( $setting->id );
     if ( array_key_exists( $input, $control->choices ) ) {
         return $input;
     } else {
@@ -227,35 +228,35 @@ function construction_hub_sanitize_phone_number( $phone ) {
 }
 
 function construction_hub_sanitize_checkbox( $input ) {
-	// Boolean check 
+	// Boolean check
 	return ( ( isset( $input ) && true == $input ) ? true : false );
 }
 
 function construction_hub_sanitize_number_absint( $number, $setting ) {
 	// Ensure $number is an absolute integer (whole number, zero or greater).
 	$number = absint( $number );
-	
+
 	// If the input is an absolute integer, return it; otherwise, return the default
 	return ( $number ? $number : $setting->default );
 }
 
 function construction_hub_sanitize_number_range( $number, $setting ) {
-	
+
 	// Ensure input is an absolute integer.
 	$number = absint( $number );
-	
+
 	// Get the input attributes associated with the setting.
 	$atts = $setting->manager->get_control( $setting->id )->input_attrs;
-	
+
 	// Get minimum number in the range.
 	$min = ( isset( $atts['min'] ) ? $atts['min'] : $number );
-	
+
 	// Get maximum number in the range.
 	$max = ( isset( $atts['max'] ) ? $atts['max'] : $number );
-	
+
 	// Get step.
 	$step = ( isset( $atts['step'] ) ? $atts['step'] : 1 );
-	
+
 	// If the number is within the valid range, return it; otherwise, return the default
 	return ( $min <= $number && $number <= $max && is_int( $number / $step ) ? $number : $setting->default );
 }

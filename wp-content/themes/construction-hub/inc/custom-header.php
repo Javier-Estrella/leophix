@@ -16,11 +16,13 @@
 function construction_hub_custom_header_setup() {
 
 	add_theme_support( 'custom-header', apply_filters( 'construction_hub_custom_header_args', array(
-		'default-image'      => get_parent_theme_file_uri( '/assets/images/header_img.png' ),
+		'default-image'          => get_parent_theme_file_uri( '/assets/images/header_img.png' ),
 		'default-text-color'     => 'fff',
 		'header-text' 			 =>	false,
 		'width'                  => 1600,
 		'height'                 => 400,
+		'flex-width'  			 => true,
+		'flex-height' 			 => true,
 		'wp-head-callback'       => 'construction_hub_header_style',
 	) ) );
 

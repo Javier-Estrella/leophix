@@ -21,7 +21,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_facebook_url',array(
         'default'=> '',
         'sanitize_callback' => 'esc_url_raw'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_facebook_url',array(
         'label' => __('Facebook Link','roofing-contractor'),
         'section'=> 'roofing_contractor_social_media',
@@ -31,7 +31,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_twitter_url',array(
         'default'=> '',
         'sanitize_callback' => 'esc_url_raw'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_twitter_url',array(
         'label' => __('Twitter Link','roofing-contractor'),
         'section'=> 'roofing_contractor_social_media',
@@ -41,7 +41,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_instagram_url',array(
         'default'=> '',
         'sanitize_callback' => 'esc_url_raw'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_instagram_url',array(
         'label' => __('Instagram Link','roofing-contractor'),
         'section'=> 'roofing_contractor_social_media',
@@ -51,7 +51,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_youtube_url',array(
         'default'=> '',
         'sanitize_callback' => 'esc_url_raw'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_youtube_url',array(
         'label' => __('YouTube Link','roofing-contractor'),
         'section'=> 'roofing_contractor_social_media',
@@ -61,7 +61,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_pint_url',array(
         'default'=> '',
         'sanitize_callback' => 'esc_url_raw'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_pint_url',array(
         'label' => __('Pinterest Link','roofing-contractor'),
         'section'=> 'roofing_contractor_social_media',
@@ -77,7 +77,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_projetcs_main_text',array(
         'default'=> '',
         'sanitize_callback' => 'sanitize_text_field'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_projetcs_main_text',array(
         'label' => esc_html__('Section Heading Text','roofing-contractor'),
         'section'=> 'roofing_contractor_projects',
@@ -87,7 +87,7 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_projetcs_main_heading',array(
         'default'=> '',
         'sanitize_callback' => 'sanitize_text_field'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_projetcs_main_heading',array(
         'label' => esc_html__('Section Heading','roofing-contractor'),
         'section'=> 'roofing_contractor_projects',
@@ -97,19 +97,19 @@ function roofing_contractor_customize_register( $wp_customize ) {
     $wp_customize->add_setting('roofing_contractor_projetcs_number',array(
         'default'=> '',
         'sanitize_callback' => 'sanitize_text_field'
-    )); 
+    ));
     $wp_customize->add_control('roofing_contractor_projetcs_number',array(
         'label' => esc_html__('No of Tabs to show','roofing-contractor'),
         'section'=> 'roofing_contractor_projects',
         'type'=> 'number'
-    )); 
+    ));
 
     $featured_post = get_theme_mod('roofing_contractor_projetcs_number','');
     for ( $j = 1; $j <= $featured_post; $j++ ) {
         $wp_customize->add_setting('roofing_contractor_projetcs_text'.$j,array(
             'default'=> '',
             'sanitize_callback' => 'sanitize_text_field'
-        )); 
+        ));
         $wp_customize->add_control('roofing_contractor_projetcs_text'.$j,array(
             'label' => esc_html__('Tab ','roofing-contractor').$j,
             'section'=> 'roofing_contractor_projects',

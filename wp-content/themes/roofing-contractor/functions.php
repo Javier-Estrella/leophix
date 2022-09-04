@@ -110,22 +110,22 @@ add_action( 'widgets_init', 'roofing_contractor_widgets_init' );
 
 // enqueue styles for child theme
 function roofing_contractor_enqueue_styles() {
-    
+
     // Bootstrap
     wp_enqueue_style( 'bootstrap-css', get_theme_file_uri( '/assets/css/bootstrap.css' ) );
 
     // Theme block stylesheet.
     wp_enqueue_style( 'roofing-contractor-block-style', get_theme_file_uri( '/assets/css/blocks.css' ), array( 'roofing-contractor-child-style' ), '1.0' );
-    
+
     // enqueue parent styles
     wp_enqueue_style('construction-hub-style', get_template_directory_uri() .'/style.css');
-    
+
     // enqueue child styles
     wp_enqueue_style('roofing-contractor-child-style', get_stylesheet_directory_uri() .'/style.css', array('construction-hub-style'));
 
     wp_enqueue_script( 'roofing-contractor-custom-scripts-jquery', get_theme_file_uri() . '/assets/js/custom.js', array('jquery'),'' ,true );
 
-    wp_enqueue_script( 'comment-reply', '/wp-includes/js/comment-reply.min.js', array(), false, true );    
+    wp_enqueue_script( 'comment-reply', '/wp-includes/js/comment-reply.min.js', array(), false, true );
 }
 add_action('wp_enqueue_scripts', 'roofing_contractor_enqueue_styles');
 
@@ -147,22 +147,38 @@ function roofing_contractor_header_style() {
 }
 add_action( 'wp_enqueue_scripts', 'roofing_contractor_header_style' );
 
-add_action( 'init', 'roofing_contractor_remove_my_action');
-function roofing_contractor_remove_my_action() {
-    remove_action( 'admin_menu','construction_hub_menu' );
-    remove_action( 'admin_notices','construction_hub_activation_notice' );
-}
 
 if ( ! defined( 'CONSTRUCTION_HUB_PRO_THEME_NAME' ) ) {
     define( 'CONSTRUCTION_HUB_PRO_THEME_NAME', esc_html__( 'Roofing Contractor Pro', 'roofing-contractor' ));
 }
 if ( ! defined( 'CONSTRUCTION_HUB_PRO_THEME_URL' ) ) {
     define( 'CONSTRUCTION_HUB_PRO_THEME_URL', esc_url('https://www.themespride.com/themes/roofing-contractor-wordpress-theme/'));
-}
 
+if ( ! defined( 'CONSTRUCTION_HUB_FREE_THEME_URL' ) ) {
+	define( 'CONSTRUCTION_HUB_FREE_THEME_URL', 'https://www.themespride.com/themes/free-roofing-wordpress-theme/' );
+}
+if ( ! defined( 'CONSTRUCTION_HUB_DEMO_THEME_URL' ) ) {
+	define( 'CONSTRUCTION_HUB_DEMO_THEME_URL', 'https://www.themespride.com/roofing-contractor-pro/' );
+}
+if ( ! defined( 'CONSTRUCTION_HUB_RATE_THEME_URL' ) ) {
+    define( 'CONSTRUCTION_HUB_RATE_THEME_URL', 'https://wordpress.org/support/theme/roofing-contractor/reviews/#new-post' );
+}
+if ( ! defined( 'CONSTRUCTION_HUB_CHANGELOG_THEME_URL' ) ) {
+    define( 'CONSTRUCTION_HUB_CHANGELOG_THEME_URL', get_stylesheet_directory() . '/readme.txt' );
+}
+if ( ! defined( 'CONSTRUCTION_HUB_SUPPORT_THEME_URL' ) ) {
+    define( 'CONSTRUCTION_HUB_SUPPORT_THEME_URL', 'https://wordpress.org/support/theme/roofing-contractor' );
+}
+}
+define('ROOFING_CONTRACTOR_CREDIT',__('https://www.themespride.com/themes/free-roofing-wordpress-theme/','roofing-contractor') );
+if ( ! function_exists( 'roofing_contractor_credit' ) ) {
+	function roofing_contractor_credit(){
+		echo "<a href=".esc_url(ROOFING_CONTRACTOR_CREDIT)." target='_blank'>".esc_html__('Roofing Contractor WordPress Theme','roofing-contractor')."</a>";
+	}
+}
 function roofing_contractor_sanitize_choices( $input, $setting ) {
-    global $wp_customize; 
-    $control = $wp_customize->get_control( $setting->id ); 
+    global $wp_customize;
+    $control = $wp_customize->get_control( $setting->id );
     if ( array_key_exists( $input, $control->choices ) ) {
         return $input;
     } else {

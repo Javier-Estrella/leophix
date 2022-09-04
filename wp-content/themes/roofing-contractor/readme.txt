@@ -2,7 +2,7 @@
 
 Contributors: ThemesPride
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 5.6
 Author URI: https://www.themespride.com/
 Theme URI: https://www.themespride.com/themes/free-roofing-wordpress-theme/
@@ -28,6 +28,10 @@ Roofing Contractor WordPress Theme is distributed under the terms of the GNU GPL
 	- Changed Header.
 	- Changed Colors.
 	- Added Services Section.
+
+= 1.1 =
+	- Added Get Started.
+	- Updated Footer Link.
 
 == Screenshots ==
 
